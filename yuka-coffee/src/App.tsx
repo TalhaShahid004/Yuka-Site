@@ -1406,20 +1406,21 @@ const Header = ({ currentPage, setCurrentPage, colors }: HeaderProps) => {
             Book a Spot
           </button>
         </div>
-        <button style={{
-          background: colors.orange,
-          color: colors.black,
-          border: 'none',
-          padding: '0.6rem 1.2rem',
-          borderRadius: '4px',
-          fontWeight: 'bold',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.5rem',
-          cursor: 'pointer'
-        }}>
-          ORDER NOW <ExternalLink size={16} />
-        </button>
+   <a href="https://www.foodpanda.pk/restaurant/sls0/yuka-coffee" target="_blank" rel="noopener noreferrer" style={{
+  background: colors.orange,
+  color: colors.black,
+  border: 'none',
+  padding: '0.6rem 1.2rem',
+  borderRadius: '4px',
+  fontWeight: 'bold',
+  display: 'flex',
+  alignItems: 'center',
+  gap: '0.5rem',
+  cursor: 'pointer',
+  textDecoration: 'none'
+}}>
+  ORDER NOW <ExternalLink size={16} />
+</a>
       </div>
     </header>
   );
@@ -1518,18 +1519,20 @@ const HomePage = ({ setCurrentPage, colors }: PageProps) => {
           <h1 style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>Elevate Your Coffee Experience</h1>
           <p style={{ fontSize: '1.2rem', marginBottom: '2rem' }}>Handcrafted beverages made with passion in the heart of Karachi</p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <button style={{
-              background: colors.orange,
-              color: colors.black,
-              border: 'none',
-              padding: '1rem 2rem',
-              borderRadius: '4px',
-              fontSize: '1.2rem',
-              fontWeight: 'bold',
-              cursor: 'pointer'
-            }}>
-              ORDER NOW
-            </button>
+            <a href="https://www.foodpanda.pk/restaurant/sls0/yuka-coffee" target="_blank" rel="noopener noreferrer" style={{
+  background: colors.orange,
+  color: colors.black,
+  border: 'none',
+  padding: '1rem 2rem',
+  borderRadius: '4px',
+  fontSize: '1.2rem',
+  fontWeight: 'bold',
+  cursor: 'pointer',
+  display: 'inline-block',
+  textDecoration: 'none'
+}}>
+  ORDER NOW
+</a>
             <button
               onClick={() => setCurrentPage('booking')}
               style={{
@@ -1761,7 +1764,7 @@ const HomePage = ({ setCurrentPage, colors }: PageProps) => {
               flex: 1,
               minWidth: '300px',
               height: '300px',
-              background: `url(/api/placeholder/500/300)`,
+              background: `url(/images/latte.jpg)`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               borderRadius: '8px',
@@ -2221,7 +2224,7 @@ const MenuPage = ({ colors }: { colors: Colors }) => {
     <>
       {/* Menu Hero */}
       <section style={{
-        background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/api/placeholder/1200/400)`,
+        background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/images/iced%20italian%20vanilla%20latte.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',
@@ -2302,7 +2305,7 @@ const MenuPage = ({ colors }: { colors: Colors }) => {
                 )}
                 <div style={{
                   height: '180px',
-                  backgroundImage: `url(${item.image || '/api/placeholder/400/180'})`,
+                  backgroundImage: `url(${item.image || '/images/spanish%20latte.jpg'})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   backgroundRepeat: 'no-repeat',
@@ -2346,7 +2349,7 @@ const BlogPage = ({ setCurrentPage, colors }: PageProps) => {
     <>
       {/* Blog Hero */}
       <section style={{
-        background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/api/placeholder/1200/400)`,
+        background: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/images/iced%20turk%20hazelnut%20latte.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',
