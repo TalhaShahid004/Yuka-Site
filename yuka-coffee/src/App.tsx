@@ -1508,7 +1508,7 @@ const HomePage = ({ setCurrentPage, colors }: PageProps) => {
     <>
       {/* Hero Section */}
       <section style={{
-        background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/espresso.jpg)`,
+        background: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/images/iced%20italian%20vanilla%20latte.jpg)`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: 'white',
